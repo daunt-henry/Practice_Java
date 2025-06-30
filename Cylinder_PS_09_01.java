@@ -177,3 +177,56 @@ Surface Area: 747.6990515543707
 Volume: 1539.3804002589986
 
 */
+
+// Repeat Q.1 for a sphere
+
+public class Sphere {
+
+    // Property
+    private double radius;
+
+    // Setter for radius
+    public void setRadius(double r) {
+        radius = r;
+    }
+
+    // Getter for radius
+    public double getRadius() {
+        return radius;
+    }
+
+    // Method to calculate surface area: 4πr²
+    public double getSurfaceArea() {
+        return 4 * Math.PI * radius * radius;
+    }
+
+    // Method to calculate volume: (4/3)πr³
+    public double getVolume() {
+        return (4.0 / 3) * Math.PI * radius * radius * radius;
+    }
+}
+
+// main method to test
+
+public class Main {
+    public static void main(String[] args) {
+        Sphere sphere = new Sphere();
+
+        // Set the radius
+        sphere.setRadius(6);
+
+        // Display the results
+        System.out.println("Radius: " + sphere.getRadius());
+        System.out.println("Surface Area: " + sphere.getSurfaceArea());
+        System.out.println("Volume: " + sphere.getVolume());
+    }
+}
+
+
+/*
+output 
+    
+Radius: 6.0
+Surface Area: 452.3893421169302
+Volume: 904.7786842338603
+*/
